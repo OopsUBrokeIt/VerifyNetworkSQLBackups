@@ -1,7 +1,7 @@
 Use dbadmin
 
-DECLARE @BakcupFolder as varchar(max) = '\\Backups\SQLBackups$\' --This is the network location of backups
- DECLARE @BackupDirectory SYSNAME = @BakcupFolder
+DECLARE @BackupFolder as varchar(max) = '\\Backups\SQLBackups$\' --This is the network location of backups
+ DECLARE @BackupDirectory SYSNAME = @BackupFolder
 
   IF OBJECT_ID('tempdb..#DirTree') IS NOT NULL
     DROP TABLE #DirTree
